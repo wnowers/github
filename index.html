@@ -1,60 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Calculation Form</title>
-    <meta charset="utf-8"/>	
-	<link rel="stylesheet" href="css/styles.css">
-	<script src="https://kit.fontawesome.com/cce8238b28.js" crossorigin="anonymous"></script>
-  </head>
-  
-  <body>
-	  	<h1 id="header">Math Computation Form</h1>
-	 <div>	  
-       <form id="forceform" name="forceform" action="index.html" method="POST" target="_self">
-		  <h3 id="lawofmotion">Law of Motion</h3>
-			<label id="Mass">Enter mass of object below</label><br>
-				<input type="number" id="mass"  name="mass" placeholder="Mass of Object"><br>
-		  	<label id="acceleration1">Enter amount of acceleration below</label><br>
-			  	<input type="number" id="accel" name="accel" placeholder="Acceleration"><br>
-	   </form>
-	   
-	   <input type="button" id="force" name="computeForce" value="Calculate Force" onclick="computeForce()"/><br>
-	   		<label id="forceOutput">Force is: </label><output id="result"></output><br>
-	   <hr />
+    <head>
+        <meta charset="utf-8">
+        <title>Morse Code Converter</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+            <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/styles.css">
+       <script src="https://kit.fontawesome.com/cce8238b28.js" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    </head>
+    <body>
+    <header class="header"><h2 id="mainheader">Enter message to be translated</h2></header>
+    <div class="textToMorse">
+        <form id="text2morse" name="text">
+            <h3 id="firstheader"><i class="fas fa-bolt"></i>Input:</h3>
+            <input type="text" id="text"><br>
+          
+        
+        <input type="button" id="T2MC" value="T2MC" onclick="toMorse();"/>
+        <input type="button" id="MC2T" value="MC2T" onclick="toText();"/>
+        <input type="reset" id="clear" value="Clear"/>
 
-	   <form id="displacement" name="displacement" action="index.html" method="POST" target="_self">
-		   <h3 id="lawofdisplacement">Law of Displacement<i id="icon" class="far far fa-arrow-alt-circle-left"></i></h3>
-			<label id="velocity">Enter initial velocity below</label><br>
-				<input type="number" id="initialVelo" placeholder="Initial velocity"><br>
-			<label id="time">Enter time in seconds below</label><br>
-				<input type="number" id="timeInSeconds" placeholder="Time in seconds"><br>
-			<label id="acceleration2">Enter acceleration amount below</label><br>
-				<input type="number" id="acceler" placeholder="Acceleration amount"><br>
-	   </form>
-
-	   <input type="button" id="Displacement" name="computeDisplacement" value="Calculate Displacement" onclick="computeAvgVelocity()"><br>
-				<label id="displacementOutput">Average Veolicty is:</label><output id="result2"></output>
-	   <hr />
-
-	   <form id="triangle" name="quadratic" action="index.html" method="POST" target="_self">
-			<h3 id="quadraticEquation">Quadratic Equation</h3>
-	   </form>
-
-	   <input type="button" id="positEquation" name="positTriangle" value="Calculate triangle" onclick="computePrincipal()"><br>
-	   		<label id="positQuadOutput">First calculation is:</label><output id="result3"></output><br>
-		
-	   		<label id="negQuadOutput">Second calculation is:</label><output id="result4"></output>
-	   <hr />
-
-	   <form id="Principal" name="principal" action="index.html" method="POST" target="_self">
-			<h3 id="InterestRate">Present Value</h3>
-	   </form>
-
-	   <input type="button" id="interestcalc" name="computeInterest" value="Compute Interest" onclick="computePresentValue()"><br>
-	   		<label id="presentValue">Present Value is:</label><output id="result5"></output><br>
-	   <hr />
-	</div>
-	<p id="display"></p>
-	<script src="js/script.js"> </script>
-  </body>
-  </html>
+         <h3 id="secondheader"><i class="fas fa-bolt"></i>Output:</h3>
+       <input type="text" name="morse"><br>
+        </form>
+    </div>
+    <script src="js/script.js"> </script>
+    </body>
+</html>

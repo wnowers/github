@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(153, 143, 145);
+}
+h3{
+    color: aqua;
+    font-size: 20px;
+}
+#T2MC{
+    background-color: black;
+    color: mintcream;
+    border-color:aqua;
+    padding: 10px;
+}
+#MC2T{
+    background-color: crimson;
+    color: mintcream;
+    border-color: aqua;
+    padding: 10px;
+}
+#clear{
+    background-color: black;
+    color: crimson;
+    border-color: aqua;
+    padding: 10px;
+}
+input{
+    padding: 20px;
+    border-radius: 15px;
+}
