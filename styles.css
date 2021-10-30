@@ -1,8 +1,14 @@
 body{
-    background-color: rgb(153, 143, 145);
+    background-color:darkgrey;
+}
+#binary {
+    padding: 10px
+}
+#integer {
+    padding: 10px
 }
 h3{
-    color: aqua;
+    color:khaki;
     font-size: 20px;
 }
 #T2MC{
@@ -11,19 +17,24 @@ h3{
     border-color:aqua;
     padding: 10px;
 }
-#MC2T{
-    background-color: crimson;
-    color: mintcream;
-    border-color: aqua;
-    padding: 10px;
+label{
+    color: black;
 }
-#clear{
-    background-color: black;
-    color: crimson;
-    border-color: aqua;
-    padding: 10px;
+#mainheader{
+    font-size: 30px;
+    color: darkorange;
+    -webkit-text-stroke: 1px black;
+
 }
 input{
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
+    background-color:orange;
+}
+#userinput{
+    background-color:white;
+    color: orange;
+}
+span, output{
+    color: white;
 }

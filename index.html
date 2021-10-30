@@ -2,29 +2,45 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Morse Code Converter</title>
+        <title>Encryption</title>
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
             <link rel="icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/styles.css">
        <script src="https://kit.fontawesome.com/cce8238b28.js" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.js"></script> 
        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
     </head>
-    <body>
-    <header class="header"><h2 id="mainheader">Enter message to be translated</h2></header>
-    <div class="textToMorse">
-        <form id="text2morse" name="text">
-            <h3 id="firstheader"><i class="fas fa-bolt"></i>Input:</h3>
-            <input type="text" id="text"><br>
-          
-        
-        <input type="button" id="T2MC" value="T2MC" onclick="toMorse();"/>
-        <input type="button" id="MC2T" value="MC2T" onclick="toText();"/>
-        <input type="reset" id="clear" value="Clear"/>
 
-         <h3 id="secondheader"><i class="fas fa-bolt"></i>Output:</h3>
-       <input type="text" name="morse"><br>
-        </form>
+
+
+    <body>
+    <header id="header"><h2 id="mainheader">Messsage Encryption</h2></header>
+    <div class="encryptionofmessage">
+        <form id="texttoencrypt" name="encryption">
+            <h3 id="firstheader">To be encrypted:</h3>
+            <input type="text" id="userinput"><br>
+            <input type="button" id="encryption" value="Submit" onclick="stringEncrypt(); print()">
+        <h3 id="secondheader">Encryption: <span id="printHere"></span></h3>
+        <label id="aesencrypt" >AES Encryption:</label>
+            <span id="aesenc"></span><br>
+        <label id="sha1encrypt">SHA1 Encryption:</label>
+            <span id="sha1enc"></span><br>
+        <label id="a224encrypt">A224 Encryption:</label>
+            <span id="sha224enc"></span><br>
+        <label id="a256encrypt">A256 Encryption:</label>
+            <span id="sha256enc"></span>
+
+            
+    <br><br>
+
+    <h3 id="thirdheader">I can also do <b>Binary Conversion</b></h3>
+    <input type="button" id="integer" onclick="d2bCode();" value="To binary">
+    <input type="button" id="binary" onclick="b2dCode()" value="To integer"><br>
+        <label id="tobeConv"><i class="fas fa-dumpster-fire"></i>Conversion: </label><output id="binaryoutput"> </output>
+    </form>
     </div>
+
+
     <script src="js/script.js"> </script>
     </body>
 </html>
