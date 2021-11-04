@@ -1,46 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Encryption</title>
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-            <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="css/styles.css">
-       <script src="https://kit.fontawesome.com/cce8238b28.js" crossorigin="anonymous"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.js"></script> 
-       <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
-    </head>
-
-
+        <meta charset="UTF-8" />
+        <title>Password Generator</title>
+            <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+             <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+             <link rel="stylesheet" href="css/styles.css">
+             <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+             <script src="https://kit.fontawesome.com/cce8238b28.js" crossorigin="anonymous"></script>
+        </head>
 
     <body>
-    <header id="header"><h2 id="mainheader">Messsage Encryption</h2></header>
-    <div class="encryptionofmessage">
-        <form id="texttoencrypt" name="encryption">
-            <h3 id="firstheader">To be encrypted:</h3>
-            <input type="text" id="userinput"><br>
-            <input type="button" id="encryption" value="Submit" onclick="stringEncrypt(); print()">
-        <h3 id="secondheader">Encryption: <span id="printHere"></span></h3>
-        <label id="aesencrypt" >AES Encryption:</label>
-            <span id="aesenc"></span><br>
-        <label id="sha1encrypt">SHA1 Encryption:</label>
-            <span id="sha1enc"></span><br>
-        <label id="a224encrypt">A224 Encryption:</label>
-            <span id="sha224enc"></span><br>
-        <label id="a256encrypt">A256 Encryption:</label>
-            <span id="sha256enc"></span>
+        <div>
 
+            <form class="form1">
             
-    <br><br>
+            <h1 id="heading1">Create your own password<i class="fas fa-user-shield"></i></h1> 
+            <span id="printHere">Password Created</span><br><br>
+            <label id="userinput">Password Length</label>
+                <input type="number" id="passLength" placeholder="10"><br><br>
+                <h3 id="heading2">Please check one of the following:</h3>
+            
+           <label id="containupper">Contain Uppercase Letters </label>
+                <input type="checkbox" id="uppercheck"><br>
+        
+            <label id="containlower">Contain Lowercase Letters </label>
+                <input type="checkbox" id="lowercheck"><br>
+                
+            <label id="containNumber">Contain Numbers </label>
+                <input type="checkbox" id="numbercheck"><br>
+                
+            <input type="button" id="generate" value="Generate Password" onclick="genPassword();">
+            </form>
 
-    <h3 id="thirdheader">I can also do <b>Binary Conversion</b></h3>
-    <input type="button" id="integer" onclick="d2bCode();" value="To binary">
-    <input type="button" id="binary" onclick="b2dCode()" value="To integer"><br>
-        <label id="tobeConv"><i class="fas fa-dumpster-fire"></i>Conversion: </label><output id="binaryoutput"> </output>
-    </form>
-    </div>
-
-
-    <script src="js/script.js"> </script>
+        </div>
+        <script src="js/script.js"></script>
     </body>
+
 </html>

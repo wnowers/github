@@ -1,40 +1,37 @@
 body{
-    background-color:darkgrey;
-}
-#binary {
-    padding: 10px
-}
-#integer {
-    padding: 10px
-}
-h3{
-    color:khaki;
-    font-size: 20px;
-}
-#T2MC{
-    background-color: black;
-    color: mintcream;
-    border-color:aqua;
-    padding: 10px;
-}
-label{
-    color: black;
-}
-#mainheader{
-    font-size: 30px;
-    color: darkorange;
-    -webkit-text-stroke: 1px black;
-
-}
-input{
-    padding: 15px;
-    border-radius: 15px;
-    background-color:orange;
+    background-color:whitesmoke;
 }
 #userinput{
-    background-color:white;
-    color: orange;
+    color: deepskyblue;
 }
-span, output{
-    color: white;
+#printHere{
+    font-size: 20px;
+    color:deepskyblue;
+}
+#passLength{
+    padding: 5px;
+    background-color: deepskyblue;
+    color:aliceblue;
+}
+#userinput{
+    font-size: 20px;
+}
+#generate{
+    background-color:deepskyblue;
+    color:aliceblue;
+}
+#containupper{
+    color: deepskyblue;
+}
+#containlower{
+    color: deepskyblue;
+}
+#containNumber{
+    color: deepskyblue;
+}
+h1{
+    color: deepskyblue;
+}
+.form1{
+    text-align: center;
 }
